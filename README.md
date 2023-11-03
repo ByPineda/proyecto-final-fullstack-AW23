@@ -11,8 +11,8 @@ Para poder probar el proyecto necesitas crear primero un entorno virtual de Pyto
 
 ```bash
     $ python -m venv venv
-    $ ./venv/Scripts/activate
-    $ pip install -r requirements.txt
+    $ (env) ./venv/Scripts/activate
+    $ (env) pip install -r requirements.txt
 ```
 
 Además, por motivos de seguridad, el proyecto viene sin la llave secreta de Django  por lo tanto tendrás que generar una nueva llave de la siguiente manera:
