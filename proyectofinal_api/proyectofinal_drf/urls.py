@@ -23,6 +23,7 @@ urlpatterns = [
     #API's para obtener datos
     ##Requieren autenticacion-----------------------------------
     path('courses/', MateriasViewSet.as_view()),
+    path('users/',SingleUserViewSet.as_view()),
     path('users/list', UsuariosViewSet.as_view()),
     path('users/modify', ModificarUsuarioViewSet.as_view()),
     path('users/delete', EliminarUsuarioViewSet.as_view()),

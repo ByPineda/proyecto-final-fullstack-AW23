@@ -68,6 +68,18 @@ class UsuariosViewSet(generics.CreateAPIView):
         lista = ProfilesSerializer(profiles, many=True).data
         return Response(lista,200)
 
+
+#API datos de los USUARIOS por ID
+class SingleUserViewSet(generics.CreateAPIView):
+    # Obtener usuario por ID
+    permission_classes = (permissions.IsAuthenticated,)
+    def get(self, request, *args, **kwargs):
+        user = get_object_or_404(Profiles, id=request.data["id"])
+        user = ProfilesSerializer(user, many=False).data
+
+        return Response(user, 200)
+    
+
 #API modificar USUARIOS
 class ModificarUsuarioViewSet(generics.CreateAPIView):
     permission_classes = (permissions.IsAuthenticated,)
@@ -91,6 +103,7 @@ class ModificarUsuarioViewSet(generics.CreateAPIView):
 
         return Response(user, 200)
 
+#API eliminar USUARIOS
 class EliminarUsuarioViewSet(generics.CreateAPIView):
     def delete(self, request, *args, **kwargs):
         profile = get_object_or_404(Profiles, id=request.data["id"])
