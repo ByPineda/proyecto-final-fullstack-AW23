@@ -11,7 +11,7 @@ Para poder probar el proyecto necesitas crear primero un entorno virtual de Pyto
 
 ```bash
     $ python -m venv venv
-    $ (env) ./venv/Scripts/activate
+    $ ./venv/Scripts/activate
     $ (env) pip install -r requirements.txt
 ```
 
