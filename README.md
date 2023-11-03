@@ -44,3 +44,13 @@ Para más ayuda ponerse en contacto conmigo por: angel.gonzalezpi@alumno.buap.mx
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+## Instalación y ejecución
+
+Para poder probar el proyecto necesitas crear primero un entorno virtual de Pyton e instalar las dependencias desde el archivo "requirements.txt".
+
+```bash
+    $ python -m venv venv
+    $ ./venv/Scripts/activate
+    $ pip install -r requirements.txt
+```
+    
