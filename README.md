@@ -33,7 +33,7 @@ Por lo tanto queda a tu criterio cambiar los parámetros de la base de datos, cr
 
 
     
-## Documentation
+## Documentación
 
 [Tutorial y documentación](https://pinola.notion.site/Construyendo-una-App-Web-con-Docker-MySQL-Django-y-Angular-e83fbbab72bb4da19858445c7a36f7a1?pvs=4)
 
