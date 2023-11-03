@@ -12,7 +12,7 @@ Para poder probar el proyecto necesitas crear primero un entorno virtual de Pyto
 ```bash
     $ python -m venv venv
     $ ./venv/Scripts/activate
-    $ pip install -r requirements.txt
+    $ (env) pip install -r requirements.txt
 ```
 
 Además, por motivos de seguridad, el proyecto viene sin la llave secreta de Django  por lo tanto tendrás que generar una nueva llave de la siguiente manera:
@@ -33,7 +33,7 @@ Por lo tanto queda a tu criterio cambiar los parámetros de la base de datos, cr
 
 
     
-## Documentation
+## Documentación
 
 [Tutorial y documentación](https://pinola.notion.site/Construyendo-una-App-Web-con-Docker-MySQL-Django-y-Angular-e83fbbab72bb4da19858445c7a36f7a1?pvs=4)
 
