@@ -14,6 +14,24 @@ Para poder probar el proyecto necesitas crear primero un entorno virtual de Pyto
     $ ./venv/Scripts/activate
     $ pip install -r requirements.txt
 ```
+
+Además, por motivos de seguridad, el proyecto viene sin la llave secreta de Django  por lo tanto tendrás que generar una nueva llave de la siguiente manera:
+```bash
+    $ (env) $ python manage.py shell
+    >>> from django.core.management.utils import get_random_secret_key
+    >>> print(get_random_secret_key())
+```
+
+Una vez el metodo devuelva la llave, pegarla en el **"settings.py"** en el esquema **SECRET_KEY**.
+
+No olvidemos que el proyecto tiene credenciales genericas como:
+
+- username: root
+- password: password
+
+Por lo tanto queda a tu criterio cambiar los parámetros de la base de datos, credenciales de Django, etc...
+
+
     
 ## Documentation
 
